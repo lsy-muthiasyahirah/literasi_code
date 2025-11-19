@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        header{
+            background-color: #95c5da;
+            color:white;
+            padding: 5px;
+            padding-left: 10px; 
+            margin: 5px 5px 5px;
+            border-radius: 15px;
+        }
+        nav{
+            background-color: #fb7857cf;
+            color: white;
+            text-align: center;
+            display:block;
+        }
+        button { margin-top: 15px; padding: 10px; background-color: #28a745; color: white; border: none; cursor: pointer; 
+        }
+        button:hover { background-color: #218838; 
+        }
+        #successMessage { 
+        margin-top: 20px; 
+        padding: 10px; 
+        background-color: #d4edda; 
+        color: #155724; 
+        border: 1px solid #c3e6cb; 
+        display: none; 
+        }
+    </style>
+</head>
+<body>
+</head>
+<body>
+    <header>
+        <h1><img src="image/YUSHI.png" alt="logo" width="40" height="35"> Bubble Paw</h1>
+        <nav>
+            <a href="website_muthia.html">BERANDA</a>
+        </nav>   
+    </header>
+    <form action="submit.php" method="post">
+        <label for="name">Nama Pemesan:</label>
+        <input type="text" id="name" name="name" required/>
+        <br />
+        <label for="Alamat">Alamat:</label>
+        <input type="text" id="Alamat" name="Alamat" required/>
+        <br/>
+        <label for="jumlah">Jumlah Pesanan:</label>
+        <input type="number" id="jumlah" name="jumlah" required/>
+        <br/>
+        <label for="Variasi">Variasi:</label>
+        <input type="radio" id="RichLion Keyring" name="Variasi" value="RichLion Keyring" />
+        <label for="RichLion Keyring">RichLion Keyring</label>
+        <input type="radio" id="Devil Keyring" name="Variasi" value="Devil Keyring" />
+        <label for="Devil Keyring">Devil Keyring</label>
+        <input type="radio" id="Bébé Keyring" name="Variasi" value="Bébé Keyring" />
+        <label for="Bébé Keyring">Bébé Keyring</label>
+        <input type="radio" id="Sunbathe Keyring" name="Variasi" value="Sunbathe Keyring" />
+        <label for="Sunbathe Keyring">Sunbathe Keyring</label>
+        <input type="radio" id="Grape Bag" name="Variasi" value="Grape Bag" />
+        <label for="Grape Bag">Grape Bag</label>
+        <input type="radio" id="Baby Blue Bag" name="Variasi" value="Baby Blue Bag" />
+        <label for="Baby Blue Bag">Baby Blue Bag</label>
+        <input type="radio" id="Cat Headband" name="Variasi" value="Cat Headband" />
+        <label for="Cat Headband">Cat Headband</label>
+        <input type="radio" id="Wish Wallet" name="Variasi" value="Wish Wallet" />
+        <label for="Wish Wallet">Wish Wallet</label>
+        <input type="radio" id="Keyboard Fidget Keyring " name="Variasi" value="Keyboard Fidget Keyring " />
+        <label for="Keyboard Fidget Keyring ">Keyboard Fidget Keyring </label>
+        <input type="radio" id="Dream Bucket Hat" name="Variasi" value="Dream Bucket Hat" />
+        <label for="Dream Bucket Hat">Dream Bucket Hat</label>
+        <input type="radio" id="Grape Bucket Hat" name="Variasi" value="Grape Bucket Hat" />
+        <label for="Grape Bucket Hat">Grape Bucket Hat</label>
+        <input type="radio" id="Winter 14 cm Standing Doll" name="Variasi" value="Winter 14 cm Standing Doll" />
+        <label for="Winter 14 cm Standing Doll">Winter 14 cm Standing Doll</label>
+        <input type="radio" id="Random Wish Doll" name="Variasi" value="Random Wish Doll" />
+        <label for="Random Wish Doll">Random Wish Doll</label>
+        <input type="radio" id="Bracelet" name="Variasi" value="Bracelet" />
+        <label for="Bracelet">Bracelet</label>
+        
+        <p>
+        <label for="comment">Pesan:</label><br/>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea></p>
+        <button type="submit">Kirim</button>
+    </form>
+    <div id="successMessage">
+        <p>Sukses! Data telah dikirim.</p>
+    </div>
+</body>
+</html>
